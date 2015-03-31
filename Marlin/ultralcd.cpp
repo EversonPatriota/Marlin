@@ -252,6 +252,7 @@ static void lcd_status_screen()
           }
         }
         else if (current_click) {
+			lcd_init; // Refresh LCD in case of static garble by ma@reprap.me
             lcd_quick_feedback();
             wait_for_unclick = true;
             current_click = false;
