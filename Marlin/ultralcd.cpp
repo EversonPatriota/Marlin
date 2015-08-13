@@ -433,12 +433,12 @@ static void lcd_tune_menu()
     MENU_ITEM_EDIT(int3, MSG_FAN_SPEED, &fanSpeed, 0, 255);
     MENU_ITEM_EDIT(int3, MSG_FLOW, &extrudemultiply, 10, 999);
     MENU_ITEM_EDIT(int3, MSG_FLOW0, &extruder_multiply[0], 10, 999);
-#if TEMP_SENSOR_1 != 0
-    MENU_ITEM_EDIT(int3, MSG_FLOW1, &extruder_multiply[1], 10, 999);
-#endif
-#if TEMP_SENSOR_2 != 0
-    MENU_ITEM_EDIT(int3, MSG_FLOW2, &extruder_multiply[2], 10, 999);
-#endif
+//#if TEMP_SENSOR_1 != 0
+//    MENU_ITEM_EDIT(int3, MSG_FLOW1, &extruder_multiply[1], 10, 999);
+//#endif
+//#if TEMP_SENSOR_2 != 0
+//    MENU_ITEM_EDIT(int3, MSG_FLOW2, &extruder_multiply[2], 10, 999);
+//#endif
 
 #ifdef BABYSTEPPING
     #ifdef BABYSTEP_XY
@@ -471,6 +471,7 @@ void lcd_preheat_abs0()
     setWatch(); // heater sanity check timer
 }
 
+/*
 #if TEMP_SENSOR_1 != 0 //2nd extruder preheat
 void lcd_preheat_pla1()
 {
@@ -490,6 +491,7 @@ void lcd_preheat_abs1()
     setWatch(); // heater sanity check timer
 }
 #endif //2nd extruder preheat
+
 
 #if TEMP_SENSOR_2 != 0 //3 extruder preheat
 void lcd_preheat_pla2()
@@ -535,6 +537,7 @@ void lcd_preheat_abs012()
 }
 #endif //more than one extruder present
 
+*/
 void lcd_preheat_pla_bedonly()
 {
     setTargetBed(plaPreheatHPBTemp);
@@ -556,6 +559,7 @@ static void lcd_preheat_pla_menu()
     START_MENU();
     MENU_ITEM(back, MSG_PREPARE, lcd_prepare_menu);
     MENU_ITEM(function, MSG_PREHEAT_PLA0, lcd_preheat_pla0);
+/*
 #if TEMP_SENSOR_1 != 0 //2 extruder preheat
     MENU_ITEM(function, MSG_PREHEAT_PLA1, lcd_preheat_pla1);
 #endif //2 extruder preheat
@@ -565,6 +569,7 @@ static void lcd_preheat_pla_menu()
 #if TEMP_SENSOR_1 != 0 || TEMP_SENSOR_2 != 0 //all extruder preheat
     MENU_ITEM(function, MSG_PREHEAT_PLA012, lcd_preheat_pla012);
 #endif //2 extruder preheat
+*/
 #if TEMP_SENSOR_BED != 0
     MENU_ITEM(function, MSG_PREHEAT_PLA_BEDONLY, lcd_preheat_pla_bedonly);
 #endif
@@ -576,6 +581,7 @@ static void lcd_preheat_abs_menu()
     START_MENU();
     MENU_ITEM(back, MSG_PREPARE, lcd_prepare_menu);
     MENU_ITEM(function, MSG_PREHEAT_ABS0, lcd_preheat_abs0);
+/*
 #if TEMP_SENSOR_1 != 0 //2 extruder preheat
     MENU_ITEM(function, MSG_PREHEAT_ABS1, lcd_preheat_abs1);
 #endif //2 extruder preheat
@@ -585,6 +591,7 @@ static void lcd_preheat_abs_menu()
 #if TEMP_SENSOR_1 != 0 || TEMP_SENSOR_2 != 0 //all extruder preheat
     MENU_ITEM(function, MSG_PREHEAT_ABS012, lcd_preheat_abs012);
 #endif //2 extruder preheat
+*/
 #if TEMP_SENSOR_BED != 0
     MENU_ITEM(function, MSG_PREHEAT_ABS_BEDONLY, lcd_preheat_abs_bedonly);
 #endif
@@ -771,12 +778,14 @@ static void lcd_control_temperature_menu()
 #if TEMP_SENSOR_0 != 0
     MENU_ITEM_EDIT(int3, MSG_NOZZLE, &target_temperature[0], 0, HEATER_0_MAXTEMP - 15);
 #endif
+/*
 #if TEMP_SENSOR_1 != 0
     MENU_ITEM_EDIT(int3, MSG_NOZZLE1, &target_temperature[1], 0, HEATER_1_MAXTEMP - 15);
 #endif
 #if TEMP_SENSOR_2 != 0
     MENU_ITEM_EDIT(int3, MSG_NOZZLE2, &target_temperature[2], 0, HEATER_2_MAXTEMP - 15);
 #endif
+*/
 #if TEMP_SENSOR_BED != 0
     MENU_ITEM_EDIT(int3, MSG_BED, &target_temperature_bed, 0, BED_MAXTEMP - 15);
 #endif
