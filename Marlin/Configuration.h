@@ -3,6 +3,20 @@
 
 #include "boards.h"
 
+
+
+
+// The following define selects which electronics board you have.
+// Please choose the name from boards.h that matches your setup
+#ifndef MOTHERBOARD
+// Uncomment your board of choice by removing the leading //
+// Only one board can stand uncommented
+//  #define MOTHERBOARD BOARD_RAMPS_13_EFB  //RAMPS with Stepper Expander
+//  #define MOTHERBOARD BOARD_RUMBA         //RUMBA stand-alone
+#endif
+
+
+
 // This configuration file contains the basic settings.
 // Advanced settings can be found in Configuration_adv.h
 // BASIC SETTINGS: select your board type, temperature sensor type, axis scaling, and endstop configuration
@@ -38,11 +52,6 @@
 // This enables the serial port associated to the Bluetooth interface
 //#define BTENABLED              // Enable BT interface on AT90USB devices
 
-// The following define selects which electronics board you have.
-// Please choose the name from boards.h that matches your setup
-#ifndef MOTHERBOARD
-  #define MOTHERBOARD BOARD_RUMBA
-#endif
 
 // Define this to set a custom name for your generic Mendel,
 // #define CUSTOM_MENDEL_NAME "This Mendel"
@@ -101,10 +110,10 @@
 // 147 is Pt100 with 4k7 pullup
 // 110 is Pt100 with 1k pullup (non standard)
 
-#define TEMP_SENSOR_0 6
-#define TEMP_SENSOR_1 6
-#define TEMP_SENSOR_2 6
-#define TEMP_SENSOR_BED 6
+#define TEMP_SENSOR_0 1   // Diamond edit
+#define TEMP_SENSOR_1 1   // Diamond edit
+#define TEMP_SENSOR_2 1   // Diamond edit
+#define TEMP_SENSOR_BED 1   // Diamond edit
 
 // This makes temp sensor 1 a redundant sensor for sensor 0. If the temperatures difference between these sensors is to high the print will be aborted.
 //#define TEMP_SENSOR_1_AS_REDUNDANT

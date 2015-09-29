@@ -627,6 +627,10 @@
     #define E1_DIR_PIN         34
     #define E1_ENABLE_PIN      30
 
+    #define E2_STEP_PIN        64   // Diamond edit
+    #define E2_DIR_PIN         59   // Diamond edit
+    #define E2_ENABLE_PIN      44   // Diamond edit
+
 #if MB(RAMPS_13_EEB)  //FMM added for Filament Extruder
 #ifdef FILAMENT_SENSOR
     //define analog pin for the filament width sensor input
@@ -684,7 +688,7 @@
   #endif
 
   #if MB(RAMPS_13_EFB) || MB(AZTEEG_X3)
-    #define HEATER_1_PIN       -1
+    #define HEATER_1_PIN       4    // Diamond edit
   #else
     #define HEATER_1_PIN       9    // EXTRUDER 2 (FAN On Sprinter)
   #endif
@@ -702,11 +706,11 @@
     #define HEATER_6_PIN       6
     #define HEATER_7_PIN       11
   #else
-    #define HEATER_2_PIN       -1
+    #define HEATER_2_PIN       4   // Diamond edit
   #endif
 
   #define TEMP_0_PIN         13   // ANALOG NUMBERING
-  #define TEMP_1_PIN         15   // ANALOG NUMBERING
+  #define TEMP_1_PIN         13   // Diamond edit   // ANALOG NUMBERING
   #if MB(AZTEEG_X3_PRO)
     #define TEMP_2_PIN         12   // ANALOG NUMBERING
     #define TEMP_3_PIN         11   // ANALOG NUMBERING
@@ -714,7 +718,7 @@
     #define TC1                4    // ANALOG NUMBERING Thermo couple on Azteeg X3Pro
     #define TC2                5    // ANALOG NUMBERING Thermo couple on Azteeg X3Pro
   #else
-    #define TEMP_2_PIN         -1   // ANALOG NUMBERING
+    #define TEMP_2_PIN         13   // Diamond edit   // ANALOG NUMBERING
   #endif
 
   #if MB(RAMPS_13_EFF) || MB(RAMPS_13_EEF)
