@@ -12,6 +12,8 @@ In Configuration.h please select board RAMPS or RUMBA by uncommenting one of fol
 
 
 
+
 Documentation for the Diamond Hotend at http://reprap.org/wiki/Diamond_Hotend/
+
 General Marlin firmware documentation at http://www.marlinfirmware.org/
 
