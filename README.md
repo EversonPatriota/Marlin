@@ -1,5 +1,4 @@
-IMPORTANT - READ THIS FIRST
-
+IMPORTANT - READ THIS FIRST!
 ===================================
 Marlin - The Diamond Hotend version
 ===================================
