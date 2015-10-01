@@ -1,11 +1,11 @@
+To download: use the download button (Download ZIP) to the right ----------------------------->
+
 === IMPORTANT - READ THIS FIRST! ===
 
 Marlin - The Diamond Hotend version
 ===
 
 This is Marlin version 1.0 adapted to fit the bq Prusa i3 Hephestos printer by default
-
-To download: use the download button (Download ZIP) to the right ----------------------------->
 
 Supported boards are:
  * RAMPS (33)
