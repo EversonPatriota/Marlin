@@ -8,7 +8,7 @@ Marlin - The Diamond Hotend version
 
 This is Marlin version 1.0 adapted to fit the bq Prusa i3 Hephestos printer by default
 
-The precompiled HEX-files can be uploaded using the "Install custom firmware..." feature in Cura
+The precompiled HEX-files can be installed using the "Install custom firmware..." feature found in Cura
 
 Supported boards are:
  * RAMPS (33)
