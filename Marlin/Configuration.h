@@ -9,12 +9,12 @@
 #ifndef MOTHERBOARD
 // Uncomment your board of choice by removing the leading //
 // Only one board can stand uncommented
-//  #define MOTHERBOARD BOARD_RAMPS_13_EFB  //RAMPS with Stepper Expander (new option as of October 2015)
+  #define MOTHERBOARD BOARD_RAMPS_13_EFB  //RAMPS with Stepper Expander (new option as of October 2015)
 //  #define MOTHERBOARD BOARD_RUMBA         //RUMBA stand-alone (chose this if you have the Kickstarter kit)
 #endif
 
 // Uncomment this line if you have a heatbed or comment it if you have a heatbed installed (uses D8 for output and T2 for thermistor)
-// #define HEATBED_PRESENT
+#define HEATBED_PRESENT
 
 
 // This configuration file contains the basic settings.
@@ -325,7 +325,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 #define DISABLE_Y false
 #define DISABLE_Z false
 #define DISABLE_E false // For all extruders
-#define DISABLE_INACTIVE_EXTRUDER true //disable only inactive extruders and keep active extruder enabled
+#define DISABLE_INACTIVE_EXTRUDER false //disable only inactive extruders and keep active extruder enabled
 
 #define INVERT_X_DIR false    // for Mendel set to false, for Orca set to true
 #define INVERT_Y_DIR true    // for Mendel set to true, for Orca set to false
