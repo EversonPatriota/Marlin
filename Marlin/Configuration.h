@@ -9,12 +9,12 @@
 #ifndef MOTHERBOARD
 // Uncomment your board of choice by removing the leading //
 // Only one board can stand uncommented
-  #define MOTHERBOARD BOARD_RAMPS_13_EFB  //RAMPS with Stepper Expander (new option as of October 2015)
+//  #define MOTHERBOARD BOARD_RAMPS_13_EFB  //RAMPS with Stepper Expander (new option as of October 2015)
 //  #define MOTHERBOARD BOARD_RUMBA         //RUMBA stand-alone (chose this if you have the Kickstarter kit)
 #endif
 
 // Uncomment this line if you have a heatbed or comment it if you have a heatbed installed (uses D8 for output and T2 for thermistor)
-#define HEATBED_PRESENT
+//#define HEATBED_PRESENT
 
 
 // This configuration file contains the basic settings.
