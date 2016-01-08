@@ -1,4 +1,4 @@
-To download: use the download button (Download ZIP) to the right ----------------------------->
+To download: use the download button (Download ZIP) at the top right -----^
 
 
 === IMPORTANT - READ THIS FIRST! ===
